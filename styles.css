@@ -1,0 +1,39 @@
+/*main page style*/
+body {
+    background-color:#8FC2FF ;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    /* width: 100vw;
+    text-align: center; */
+    margin: 0 auto;
+    width: fit-content;
+}
+
+h2 {
+    /* width: 100vw;
+    text-align: center; */
+    margin: 50px auto;
+    width: fit-content;
+}
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
