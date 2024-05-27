@@ -40,6 +40,13 @@ p {
     /* Image styles */
     margin-left: auto; /* Move the image to the right */
   }
+
+form {
+    margin: 0 auto;
+    padding: 20px;
+    width: fit-content;
+}
+}
   
 
  
