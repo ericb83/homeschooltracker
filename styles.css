@@ -9,6 +9,7 @@ h1 {
     /* width: 100vw;
     text-align: center; */
     margin: 0 auto;
+    padding: 20px;
     width: fit-content;
 }
 
@@ -18,8 +19,33 @@ h2 {
     margin: 50px auto;
     width: fit-content;
 }
+p {
+       /* width: 100vw;
+    text-align: center; */
+    margin: 0 auto;
+    padding: 20px;
+    width: fit-content; 
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+  .flex-container p {
+    /* Paragraph styles */
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .flex-container img {
+    /* Image styles */
+    margin-left: auto; /* Move the image to the right */
+  }
+  
+
+ 
 .nav-btn {
     display: inline-block;
+    margin: 50px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
