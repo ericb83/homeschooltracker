@@ -1,71 +1,137 @@
 /*main page style*/
 body {
-    background-color:#8FC2FF ;
-    font-family: "Freeman", sans-serif;
-    font-weight: 400;
+  background-color: #8fc2ff;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-    /* width: 100vw;
+  /* width: 100vw;
     text-align: center; */
-    margin: 0 auto;
-    padding: 20px;
-    width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  width: fit-content;
 }
 
 h2 {
-    /* width: 100vw;
+  /* width: 100vw;
     text-align: center; */
-    margin: 50px auto;
-    width: fit-content;
+  margin: 50px auto;
+  width: fit-content;
 }
-p {
-       /* width: 100vw;
-    text-align: center; */
-    margin: 0 auto;
-    padding: 20px;
-    width: fit-content; 
+.container {
+  display: flex;
 }
 
-.flex-container {
-    display: flex;
-  }
-  
-  .flex-container p {
-    /* Paragraph styles */
-    flex: 1; /* Take up remaining space */
-  }
-  
-  .flex-container img {
-    /* Image styles */
-    margin-left: auto; /* Move the image to the right */
-  }
+.left {
+  flex: 1;
+} /* The left div spans the first column */
+
+img {
+  max-width: 100%; /* Ensure the image does not exceed its container width */
+}
 
 form {
-    margin: 0 auto;
-    padding: 20px;
-    width: fit-content;
+  max-width: 300px; /* Optional: Set a max-width to limit the width of the form */
+  margin: 0 auto; /* Optional: Center the form horizontally */
 }
-  
 
- 
+label {
+  display: block; /* Display each label on a new line */
+  margin-bottom: 5px; /* Add some space between labels */
+  font-family: "Freeman", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin-top: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Freeman", sans-serif;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
 .nav-btn {
-    display: inline-block;
-    margin: 50px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  margin: 100px;
+  padding: 10px 20px;
+  font-family: "Freeman", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-btn:hover {
-    background-color: #333;
-    color: #fff;
-  }
+  background-color: #333;
+  color: #fff;
+}
+
+.custom-button {
+  display: inline-block;
+  margin: 100px;
+  padding: 10px 20px;
+  font-family: "Freeman", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #333;
+  color: #fff;
+}

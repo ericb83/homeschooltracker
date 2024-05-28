@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"  content="width=device-width, initial-scale1.0">
-        <title>Homeschool Tracker</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale1.0" />
+    <title>Homeschool Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&display=swap"
+      rel="stylesheet"
+    />
 
-         <!-- Header -->
-         <h1>Homeschool Tracker</h1> 
-         <h2>Login</h2> 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <h1>Homeschool Tracker</h1>
+    <h2>Login</h2>
 
+    <!--Login Form -->
+    <!-- Login Form -->
+    <form onsubmit="showAlert()" class="login-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-        <!--Login Form -->
-        <form onsubmit="showAlert()">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <input type="submit" value="Login">
-        </form>
-        
-        
-    </body>
+      <input type="submit" value="Login" class="custom-button" />
+    </form>
+  </body>
 </html>
