@@ -1,34 +1,41 @@
-/*main page style*/
+/* Main page style */
 body {
   background-color: #8fc2ff;
   font-family: "Freeman", sans-serif;
   font-weight: 400;
+  margin: 0; /* Ensure no default margin on the body */
+  padding: 0; /* Ensure no default padding on the body */
 }
 
 h1 {
-  /* width: 100vw;
-    text-align: center; */
   margin: 0 auto;
   padding: 20px;
   width: fit-content;
 }
 
 h2 {
-  /* width: 100vw;
-    text-align: center; */
   margin: 50px auto;
   width: fit-content;
 }
+
 .container {
   display: flex;
+  height: 500px; 
 }
 
 .left {
-  flex: 1;
-} /* The left div spans the first column */
+  width: 50%; /* Ensure the left container takes 50% of the container width */
+  height: fit-content;
+}
+
+.right {
+  flex: 1; /* Ensure the right container takes up the remaining space */
+ 
+}
 
 img {
   max-width: 100%; /* Ensure the image does not exceed its container width */
+  border-radius: 20px;
 }
 
 form {
@@ -92,6 +99,12 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .nav-btn {
   display: inline-block;
   margin: 100px;
@@ -101,6 +114,7 @@ input[type="password"] {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+
   cursor: pointer;
   border: 2px solid #333;
   border-radius: 5px;
