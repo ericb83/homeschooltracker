@@ -20,7 +20,7 @@ h2 {
 
 .container {
   display: flex;
-  height: 500px; 
+  height: 500px;
 }
 
 .left {
@@ -30,7 +30,6 @@ h2 {
 
 .right {
   flex: 1; /* Ensure the right container takes up the remaining space */
- 
 }
 
 img {
@@ -39,7 +38,7 @@ img {
 }
 
 form {
-  max-width: 300px; /* Optional: Set a max-width to limit the width of the form */
+  max-width: 500px; /* Optional: Set a max-width to limit the width of the form */
   margin: 0 auto; /* Optional: Center the form horizontally */
 }
 
@@ -47,13 +46,6 @@ label {
   display: block; /* Display each label on a new line */
   margin-bottom: 5px; /* Add some space between labels */
   font-family: "Freeman", sans-serif;
-}
-
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -91,11 +83,13 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="email"],
-input[type="password"] {
+input[id="email"],
+input[id="password"],
+input[id="name"],
+input[id="phone_number"] {
   width: 100%;
   padding: 8px;
-  margin-bottom: 10px;
+  margin: 10px auto;
   box-sizing: border-box;
 }
 
@@ -114,7 +108,6 @@ input[type="password"] {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-
   cursor: pointer;
   border: 2px solid #333;
   border-radius: 5px;
@@ -146,6 +139,28 @@ input[type="password"] {
 }
 
 .custom-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.cstm-button {
+  display: inline-block;
+  margin: 100px;
+  padding: 0px;
+  font-family: "Freeman", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cstm-button:hover {
   background-color: #333;
   color: #fff;
 }
