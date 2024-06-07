@@ -13,6 +13,58 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <!-- Include CryptoJS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <script>
+      function generateParentId() {
+      // Create a random ID using the current timestamp and a random number
+      return 'parent-' + Date.now() + '-' + Math.floor(Math.random() * 10000);
+    }
+
+      async function showAlert(event){
+        event.preventDefault(); //Prevent form submission
+        const name = document.getElementById('name').value;
+        const phoneNumber = document.getElementById('phone_number').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        if (name && phoneNumber && email && password) {
+
+           // Hash the password using CryptoJS
+        const hashedPassword = CryptoJS.SHA256(password).toString();
+         // Generate a random parent ID
+         const parentId = generateParentId();
+
+
+          //send data to server
+          const response = await fetch('/signup', {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              parent_id: parentId,
+              name: name,
+              phone_number: phoneNumber,
+              email: email,
+              password: hashedPassword
+            })
+
+          });
+
+          if (response.ok){
+            alert('Signup successful');
+            // Redirect to login page
+          window.location.href = '/login';
+          } else {
+            alert('Signup failed. Please try again.');
+          }
+        } else {
+          alert('Please fill out all fields')
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- Header -->
