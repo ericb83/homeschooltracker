@@ -1,0 +1,6 @@
+  -user visits landing page and is given the option to either signup or login
+  -when user clicks signup it takes them to the signup form
+  -if user has already signed up and chooses login it takes them to the login form
+  -once user signed up or logged in they are taken to the data entry page where they can enter data into the form
+  -when data is submitted users data is entered into the database
+  -when user clicks view transcript they are shown the transcript in pdf
